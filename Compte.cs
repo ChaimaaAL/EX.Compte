@@ -46,7 +46,7 @@ namespace program
 
         public void Verser(Compte c, MAD somme)
         {
-            if (this.solde >= somme)
+            if (this.solde >= somme && plafond >= somme)
             {
                 this.solde -= somme;
                 c.solde += somme;
